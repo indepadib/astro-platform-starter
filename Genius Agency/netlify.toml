@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# SPA redirect (éviter 404 si tu ajoutes un router plus tard)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
